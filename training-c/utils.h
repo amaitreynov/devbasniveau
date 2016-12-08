@@ -4,4 +4,4 @@
 
 char *soustrait(char *A, char *B);
 
-#endif // H_UTILS
+#endif

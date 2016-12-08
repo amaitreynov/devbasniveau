@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include utils.h /* Include the header here, to obtain the function declaration */
+#include "utils.h"
 
 int main()
 {
     char charChain[]= "etudiant";
     char chainToRemove[]= "tui";
-    char returnedChain[] = soustrait(charChain,chainToRemove);
+    char *returnedChain;
 
-    printf("Chaine en entree: %c", charChain);
-    printf("Chaine en sortie: %c", returnedChain);
+    returnedChain = soustrait(charChain,chainToRemove);
+    printf("Resultat de soustrait: %s \n", returnedChain);
     return 0;
 }
