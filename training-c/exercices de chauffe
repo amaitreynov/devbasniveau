@@ -1,0 +1,9 @@
+
+1.	Echauffement : écrire la fonction char *soustrait(char *A, char *B) qui soustraira les caractères contenus dans B à A et renverra un pointeur sur le résultat (donc un pointeur sur A). Exemple : soustrait(‘’etudiant’’, ‘’tui’’) a pour résultat un pointeur sur la chaîne ‘’edan’’
+2.	On souhaite simuler le système d’allocation dynamique de mémoire grâce à une mémoire tableau. Pour cela votre programme allouera dynamiquement un tableau en mémoire appelé tabmem d’une taille de T octets. Vous écrirez ensuite la fonction int talloc(int lg) qui renverra l’indice du premier espace de taille lg octets contigus disponible dans ce tableau.
+3.	Ajoutez dans votre programme précédent l’écriture de données dans tabmem grâce à une fonction ecrit(int id, char *A, int n) qui écrit dans tabmem à partir de l’indice id les n premiers octets contenus à l’adresse A. Vous sécuriserez l’écriture en vérifiant que cet espace a bien été alloué d’un seul bloc par talloc() précédemment.
+4.	Ajoutez dans votre programme précédent la gestion des accès aux données grâce à une fonction char *lit(int id, int n) qui retourne les n octets contenus dans tabmem à partir de l’indice id. Vous sécuriserez l’accès aux données en vérifiant que les données à lire font bien partie d’un espace alloué d’un seul bloc par talloc() précédemment.
+5.	Améliorez votre programme précédent en y ajoutant la gestion des débordements (plus de place dans tabmem) et la fonction de désallocation tdesalloc(int id) qui libérera la totalité du segment de mémoire alloué à partir de l’indice id.
+
+NB : conservez précieusement votre programme, il pourrait vous être utile par la suite...
+
